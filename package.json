@@ -1,0 +1,33 @@
+{
+  "name": "js_algs",
+  "version": "1.0.0",
+  "description": "code challenges in javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LookOnTheBrightSide/js-golf.git"
+  },
+  "keywords": [
+    "javascript",
+    "code",
+    "challenges"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LookOnTheBrightSide/js-golf/issues"
+  },
+  "homepage": "https://github.com/LookOnTheBrightSide/js-golf#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.4.3"
+  }
+}
