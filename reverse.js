@@ -5,12 +5,10 @@ function reverse(str) {
   }
   return res;
 }
-console.log(reverse('hello'));
 
 function reverseFun(str) {
   return str.split().reverse().join();
 }
-console.log(reverseFun('hello!'));
 
 function reverseFor(str) {
   let rev = '';
@@ -19,9 +17,14 @@ function reverseFor(str) {
   }
   return rev;
 }
-console.log(reverseFor('race'));
 
 function reverseReduce(str) {
-  return str.split().reduce((rev, char) => char + rev, '');
+  return str.split('').reduce((rev, char) => char + rev, '');
 }
+
+
 console.log(reverseReduce('rab'));
+module.exports.reverse = reverse;
+module.exports.reverseFun = reverseFun;
+module.exports.reverseFor = reverseFor;
+module.exports.reverseReduce = reverseReduce;
