@@ -15,3 +15,7 @@ test('Returns bar for rab', () => {
 test('Returns e for e', () => {
   expect(reverse.reverseReduce('e')).toEqual('e');
 });
+
+test('Returns race for ecar', () => {
+  expect(reverse.reverseRecursive('ecar')).toEqual('race');
+});

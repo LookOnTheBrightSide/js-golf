@@ -22,9 +22,15 @@ function reverseReduce(str) {
   return str.split('').reduce((rev, char) => char + rev, '');
 }
 
+function reverseRecursive(str) {
+  if (str === '') {
+    return '';
+  }
+  return reverseRecursive(str.substr(1)).concat(str.charAt(0));
+}
 
-console.log(reverseReduce('rab'));
 module.exports.reverse = reverse;
 module.exports.reverseFun = reverseFun;
 module.exports.reverseFor = reverseFor;
 module.exports.reverseReduce = reverseReduce;
+module.exports.reverseRecursive = reverseRecursive;
