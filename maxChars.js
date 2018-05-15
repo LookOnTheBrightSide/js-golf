@@ -1,15 +1,11 @@
 function maxCharFor(str) {
   const chars = {};
-  str.split('').forEach(char => (!(chars[char])) ? chars[char] = 1 : chars[char]++);
-  return Object.keys(chars).reduce((a, b) => chars[a] > chars[b] ? a : b);
+  str.split('').forEach(char => ((!(chars[char])) ? chars[char] = 1 : chars[char]++));
+  return Object.keys(chars).reduce((a, b) => (chars[a] > chars[b] ? a : b));
 }
 
-console.log(maxCharFor('ab222d'))
-console.log(maxCharFor('1119999933'))
-console.log(maxCharFor('apple crumbs'))
-
 const maxChar = function (str) {
-  let chars = {};
+  const chars = {};
   for (char of str) {
     if (!(chars[char])) {
       chars[char] = 1;
@@ -26,9 +22,7 @@ const maxChar = function (str) {
     }
   }
   return maxChar;
-}
+};
 
-console.log('**** second *****')
-console.log(maxChar('ab222d'))
-console.log(maxChar('1119999933'))
-console.log(maxChar('apple crumbs'))
+module.exports.maxChar = maxChar;
+module.exports.maxCharFor = maxCharFor;
