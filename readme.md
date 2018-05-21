@@ -10,3 +10,11 @@ Tests - in Jest
 Continous Integration - CircleCi
 
 
+Todo 
+
+
+[] Bst
+
+[] To roman numerals
+
+[] Two sum
